@@ -78,8 +78,8 @@ try
             }
             if ($_GET["UserType"])  {
               $UserType = test_input($_GET["UserType"]);
-               if (!preg_match("/^[a-zA-Z ]{0,7}$/",$Surname)) {
-                $SurnameErr = "Only letters and white space allowed in UserType"; 
+               if (!preg_match("/^[a-zA-Z ]{0,7}$/",$UserType)) {
+                $UserTypeErr = "Only letters and white space allowed in UserType"; 
                }
             }
             if(($StudentIDErr =="") && ($FirstNameErr =="") && ($SurnameErr =="") && ($LocationErr =="") && ($UserTypeErr == ""))
